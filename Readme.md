@@ -11,7 +11,8 @@ the environment vatiables on startup.
 - `DNS_NAMESERVER`:
     - DNS nameserver used by nginx, default: `127.0.0.11`
 - `SERVICES`:
-    - The services to add to the config, default: `bugfinder chickenshock crosswordpuzzle default fileserver finitequiz keycloak memory regexgame towercrush`
+    - The services to add to the config, default: `default keycloak bugfinder chickenshock crosswordpuzzle fileserver finitequiz memory regexgame towercrush`
+    - `default` and `keycloak` should always be present
 - `SSL_ENABLED`:
     - true for https, false for http, default: `true`
 
