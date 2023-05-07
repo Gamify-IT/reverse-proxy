@@ -9,7 +9,7 @@ COPY nginx-templates .
 ENV DEPLOYMENT_NAME="gamify-it"
 # docker nameserver
 ENV DNS_NAMESERVER="127.0.0.11"
-ENV SERVICES="bugfinder chickenshock crosswordpuzzle default fileserver finitequiz keycloak memory regexgame towercrush"
+ENV SERVICES="default keycloak bugfinder chickenshock crosswordpuzzle fileserver finitequiz memory regexgame towercrush" # default and keycloak should always be present
 ENV SSL_ENABLED="true"
 
 COPY entrypoint.sh /entrypoint.sh
