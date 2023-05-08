@@ -6,6 +6,7 @@ NGINX_OUTPUT_CONFIG_FILE="/etc/nginx/conf.d/default.conf"
 replaceVariables(){
     sed --expression "s|###DEPLOYMENT_NAME###|${DEPLOYMENT_NAME}|g" \
         --expression "s|###DNS_NAMESERVER###|${DNS_NAMESERVER}|g" \
+        --expression "s|###LOCAL_DOMAIN###|${LOCAL_DOMAIN}|g" \
         --expression "s|###SSL_ENABLED###|${SSL_ENABLED}|g" \
         "$1"
 }
