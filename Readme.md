@@ -11,7 +11,7 @@ the environment vatiables on startup.
 - `DNS_NAMESERVER`:
     - DNS nameserver used by nginx, default: `127.0.0.11`
 - `LOCAL_DOMAIN`:
-    - domain name attended to the container names, default: empty
+    - domain name appended to the container names, default: empty
 - `SERVICES`:
     - The services to add to the config, default: `default keycloak bugfinder chickenshock crosswordpuzzle fileserver finitequiz memory regexgame towercrush`
     - `default` and `keycloak` should always be present
