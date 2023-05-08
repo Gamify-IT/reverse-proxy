@@ -10,6 +10,8 @@ the environment vatiables on startup.
     - the deployment name used as prefix for the containers, default: `gamify-it`
 - `DNS_NAMESERVER`:
     - DNS nameserver used by nginx, default: `127.0.0.11`
+- `LOCAL_DOMAIN`:
+    - domain name appended to the container names, default: empty
 - `SERVICES`:
     - The services to add to the config, default: `default keycloak bugfinder chickenshock crosswordpuzzle fileserver finitequiz memory regexgame towercrush`
     - `default` and `keycloak` should always be present
