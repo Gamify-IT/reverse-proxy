@@ -22,6 +22,7 @@ else
 fi
 replaceVariables body-main.conf >> "$NGINX_OUTPUT_CONFIG_FILE"
 for SERVICE in ${SERVICES}; do
+    echo $SERVICE
     replaceVariables "body-${SERVICE}.conf" >> "$NGINX_OUTPUT_CONFIG_FILE"
 done
 replaceVariables footer.conf >> "$NGINX_OUTPUT_CONFIG_FILE"
