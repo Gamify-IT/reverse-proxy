@@ -24,6 +24,7 @@ replaceVariables body-main.conf >> "$NGINX_OUTPUT_CONFIG_FILE"
 for SERVICE in ${SERVICES}; do
     replaceVariables "body-${SERVICE}.conf" >> "$NGINX_OUTPUT_CONFIG_FILE"
 done
+replaceVariables body-towerdefense.conf >> "$NGINX_OUTPUT_CONFIG_FILE"
 replaceVariables footer.conf >> "$NGINX_OUTPUT_CONFIG_FILE"
 
 exec "$@"
